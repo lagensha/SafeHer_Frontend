@@ -1,0 +1,13 @@
+:host {
+    display: block;
+    min-height: 100vh;
+}
+
+.hero {
+    min-height: 100vh;
+    background-image: url('./asset/img/Dreamy Pastel Skyline at Sunset.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
