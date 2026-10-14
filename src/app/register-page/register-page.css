@@ -1,0 +1,116 @@
+:host {
+    display: block;
+    min-height: 100vh;
+}
+.register-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:40px 10%;
+    box-sizing:border-box
+}
+
+.hero {
+    min-height: 100vh;
+    background-image: url('../page/img/Dreamy Pastel Skyline at Sunset.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.register-card{
+    background: rgba(255, 255, 255, 0.82);
+    width : 100%;
+    max-width: 480px;
+    padding: 45px;
+    border-radius: 25px;
+    backdrop-filter: blur(8px);
+
+    box-shadow: 0 15px 50px rgba(58, 20, 90, 0.18);
+    box-sizing: border-box;
+}
+.register-card h1 {
+  text-align: center;
+  color: #741b91;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.register-card h2 {
+  text-align: center;
+  color: #261044;
+}
+
+.register-card p {
+  text-align: center;
+  color: #777;
+}
+
+/* Form */
+.register-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-card label {
+  margin-top: 18px;
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #261044;
+}
+
+.register-card input {
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.register-card input:focus {
+  border-color: #a02dc1;
+  box-shadow: 0 0 0 3px rgba(160, 45, 193, 0.1);
+}
+
+
+.register-card button {
+  margin-top: 25px;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(90deg, #a42cb8, #55117d);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-card button:hover {
+  opacity: 0.9;
+}
+
+
+.signin {
+  margin-top: 25px;
+}
+
+.signin a {
+  color: #9019aa;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .register-container {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .register-card {
+    padding: 30px 22px;
+  }
+}
