@@ -129,12 +129,11 @@
 }
 .navbar-nav .nav-link.active {
   color: white;
-    align-items: right;
 }
 .nav-link:hover {
-  color:#f099ff
-  
+  color: #f099ff;
+  box-shadow: 0px 4px 12px rgba(87, 16, 91, 0.25);
 }
 .navbar-nav .nav-link.active:hover{
-  color:#f099ff
+  color: #f099ff;
 }
