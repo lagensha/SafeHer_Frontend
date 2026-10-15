@@ -1,5 +1,7 @@
 .hero{
-    
+    min-height: 100vh;
+    background-image: url('../landing-page/asset/img/Dreamy Pastel Skyline at Sunset.png');
+
 }
 .navbar{
   background: linear-gradient(90deg, #d07fdf, #7e3fa3, #3c0a58);
