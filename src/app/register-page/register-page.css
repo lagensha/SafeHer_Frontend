@@ -114,3 +114,10 @@
     padding: 30px 22px;
   }
 }
+.navbar{
+  background: linear-gradient(90deg, #d07fdf, #7e3fa3, #3c0a58);
+}
+.navbar-brand{
+  color: white;
+  
+}
