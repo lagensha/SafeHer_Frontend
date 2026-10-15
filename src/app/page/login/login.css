@@ -1,0 +1,23 @@
+.navbar{
+  background: linear-gradient(90deg, #d07fdf, #7e3fa3, #3c0a58);
+}
+.navbar-brand{
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.nav-link{
+  color: white;
+  font-weight: bold;
+  margin-right: 25px;
+}
+.navbar-nav .nav-link.active {
+  color: white;
+}
+.nav-link:hover {
+  color: #f099ff;
+  box-shadow: 0 6px 20px rgba(249, 157, 247, 0.4);
+}
+.navbar-nav .nav-link.active:hover{
+  color: #f099ff;
+}
