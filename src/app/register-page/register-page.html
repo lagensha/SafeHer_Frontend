@@ -1,63 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register</title>
-  <link rel="stylesheet" href="register-page.css">
-</head>
-<body>
-  <div class="hero">
-    <nav class="navbar navbar-expand-sm">
-  <div class="container-fluid">
-    <a class="navbar-brand">💜 SafeHer</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" aria-hidden="true"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ms-auto">
-        <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
-        <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
-        <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
+<div class="hero">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/">💜 SafeHer</a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+          <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-    <div class="register-container">
- <div>
-      <h1 class="firstH1">💜 SafeHer</h1>
-      <p>Your description here</p>
-    </div>
+  </nav>
+
   
-      <div class="register-card">
-        <h1>💜 SafeHer</h1>
-        <h2>Create your account</h2>
-        <p>Join our community and take control of your safety. Sign up now to access our features and resources.</p>
+  <div class="register-container">
 
-        <form>
-          <label>Full Name :</label>
-          <input type="text" placeholder="Enter your name">
 
-          <label>Email Address</label>
-          <input type="email" placeholder="Enter your email address">
-
-          <label>Phone Number</label>
-          <input type="tel" placeholder="Enter your phone number">
-
-          <label>Password</label>
-          <input type="password" placeholder="Create a password">
-
-          <label>Confirm Password</label>
-          <input type="password" placeholder="Confirm your password">
-
-          <button type="submit">Create Account →</button>
-        </form>
-
-        <p>Already have an account?
-          <a routerLink="login_page">Log in</a>
-        </p>
-      </div>
+    <div class="register-intro">
+      <h1 class="firstH1">💜 SafeHer</h1>
+      <p class="intro-desc">Your description here</p>
     </div>
+
+    
+    <div class="register-card">
+      <h1>💜 SafeHer</h1>
+      <h2>Create your account</h2>
+      <p>Join our community and take control of your safety. Sign up now to access our features and resources.</p>
+
+      <form>
+        <label for="fullName">Full Name</label>
+        <input id="fullName" type="text" placeholder="Enter your name">
+
+        <label for="email">Email Address</label>
+        <input id="email" type="email" placeholder="Enter your email address">
+
+        <label for="phone">Phone Number</label>
+        <input id="phone" type="tel" placeholder="Enter your phone number">
+
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Create a password">
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input id="confirmPassword" type="password" placeholder="Confirm your password">
+
+        <button type="submit">Create Account →</button>
+      </form>
+
+      <p class="signin">Already have an account?
+        <a routerLink="/login">Log in</a>
+      </p>
+    </div>
+
   </div>
-</body>
-</html>
+</div>

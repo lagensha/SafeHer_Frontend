@@ -1,49 +1,96 @@
 :host {
-    display: block;
-    min-height: 100vh;
+  display: block;
 }
-.register-container{
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    padding:40px 10%;
-    box-sizing:border-box;
-    flex:1
+
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../landing-page/asset/img/Dreamy Pastel Skyline at Sunset.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.navbar {
+  background: linear-gradient(90deg, #d07fdf, #7e3fa3, #3c0a58);
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.navbar-nav .nav-link.active {
+  color: white;
+}
+
+.nav-link:hover,
+.navbar-nav .nav-link.active:hover {
+  color: #f099ff;
+}
+
+.nav-link:hover {
+  box-shadow: 0 6px 20px rgba(249, 157, 247, 0.4);
+}
+
+
+.register-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 10%;
+  box-sizing: border-box;
 }
 
 .register-intro {
-    flex: 1;
+  flex: 1;
+   padding-top: 20px;  
 }
 
-.safeher-logo {
-    display: block;
-    width: min(100%, 620px);
-    height: auto;
+.firstH1 {
+  color: #741b91;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  margin-top: 0;
+    margin: 0 0 1rem 0; 
 }
 
-.hero {
-    min-height: 100vh;
-    background-image: url('../landing-page/asset/img/Dreamy Pastel Skyline at Sunset.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    flex-direction: column;
+.intro-desc {
+  color: #261044;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  max-width: 520px;
 }
 
-.register-card{
-    background: rgba(255, 255, 255, 0.82);
-    width : 100%;
-    max-width: 480px;
-    padding: 45px;
-    border-radius: 25px;
-    backdrop-filter: blur(8px);
 
-    box-shadow: 0 15px 50px rgba(58, 20, 90, 0.18);
-    box-sizing: border-box;
+.register-card {
+  background: rgba(255, 255, 255, 0.82);
+  width: 100%;
+  max-width: 480px;
+  padding: 45px;
+  border-radius: 25px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 15px 50px rgba(58, 20, 90, 0.18);
+  box-sizing: border-box;
+  margin-top:0;
+  margin-bottom:1000px;
 }
+
 .register-card h1 {
   text-align: center;
   color: #741b91;
@@ -61,25 +108,21 @@
   color: #777;
 }
 
-/* Form */
+
 .register-card form {
   display: flex;
   flex-direction: column;
 }
 
-.register-card label {
-  margin-top: 18px;
-  margin-bottom: 7px;
-  font-weight: 600;
-  color: #261044;
-}
 
 .register-card input {
   padding: 14px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 16px; /* 16px nam iOS eke zoom wenne na */
   outline: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .register-card input:focus {
@@ -87,13 +130,11 @@
   box-shadow: 0 0 0 3px rgba(160, 45, 193, 0.1);
 }
 
-
 .register-card button {
   margin-top: 25px;
   padding: 16px;
   border: none;
   border-radius: 12px;
-
   background: linear-gradient(90deg, #a42cb8, #55117d);
   color: white;
   font-size: 16px;
@@ -105,7 +146,6 @@
   opacity: 0.9;
 }
 
-
 .signin {
   margin-top: 25px;
 }
@@ -116,12 +156,33 @@
   text-decoration: none;
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
+
+@media (max-width: 992px) {
   .register-container {
-    justify-content: center;
+    padding: 40px 5%;
+    gap: 24px;
+  }
+
+  .register-card {
+    padding: 35px 28px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    background-attachment: scroll; /* mobile wala fixed hariyata wada na */
+  }
+
+  .nav-link {
+    margin-right: 0;
+  }
+
+  .register-container {
     flex-direction: column;
-    padding: 20px;
+    justify-content: center;
+    padding: 24px 16px;
+    gap: 24px;
   }
 
   .register-intro {
@@ -130,40 +191,29 @@
     text-align: center;
   }
 
-  .safeher-logo {
+  .intro-desc {
     margin: 0 auto;
   }
 
   .register-card {
     padding: 30px 22px;
+    max-width: 100%;
+  }
+
+
+  .register-card h1 {
+    display: none;
   }
 }
-.navbar{
-  background: linear-gradient(90deg, #d07fdf, #7e3fa3, #3c0a58);
+
+@media (max-width: 400px) {
+  .register-card {
+    padding: 24px 16px;
+    border-radius: 18px;
+  }
+
+  .register-card h2 {
+    font-size: 1.3rem;
+  }
 }
-.navbar-brand{
-  color: white;
-  font-size: 25px;
-  font-weight: bold;
-}
-.nav-link{
-  color: white;
-  font-weight: bold;
-  margin-right: 25px;
-}
-.navbar-nav .nav-link.active {
-  color: white;
-}
-.nav-link:hover {
-  color: #f099ff;
-  box-shadow: 0 6px 20px rgba(249, 157, 247, 0.4);
-}
-.navbar-nav .nav-link.active:hover{
-  color: #f099ff;
-}
-.firstH1{
-    color: #741b91;
-    font-size: 96px; 
-    font-weight: bold;
-    margin-bottom: 800px;
-}
+
