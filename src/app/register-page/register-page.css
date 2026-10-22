@@ -161,3 +161,8 @@
 .navbar-nav .nav-link.active:hover{
   color: #f099ff;
 }
+.firstH1{
+    color: #741b91;
+    font-size: 96px; 
+    font-weight: bold;
+}
