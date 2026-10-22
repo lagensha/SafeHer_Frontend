@@ -17,6 +17,12 @@
     flex: 1;
 }
 
+.safeher-logo {
+    display: block;
+    width: min(100%, 620px);
+    height: auto;
+}
+
 .hero {
     min-height: 100vh;
     background-image: url('../landing-page/asset/img/Dreamy Pastel Skyline at Sunset.png');
@@ -121,6 +127,11 @@
   .register-intro {
     flex: none;
     width: 100%;
+    text-align: center;
+  }
+
+  .safeher-logo {
+    margin: 0 auto;
   }
 
   .register-card {
