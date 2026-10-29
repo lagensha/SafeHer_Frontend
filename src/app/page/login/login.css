@@ -154,6 +154,9 @@
   width: 100%;
   padding: 2.25rem;
 }
+.login-card .input-with-icon input {
+  padding-left: 2.7rem;
+}
 
 .card-heading {
   align-items: center;
