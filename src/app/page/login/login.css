@@ -22,5 +22,9 @@
   color: #f099ff;
 }
 .hero{
-  
+  min-height: 100vh;
+  background-image: url('../../landing-page/asset/img/Dreamy Pastel Skyline at Sunset.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
