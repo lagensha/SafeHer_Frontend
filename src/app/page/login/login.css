@@ -140,8 +140,8 @@
   margin-top: 0.2rem;
 }
 
-.register-card {
-  align-self: center;
+.login-card {
+  align-self: flex-start;
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid rgba(255, 255, 255, 0.8);
   box-shadow: 0 24px 70px rgba(58, 20, 90, 0.2);
@@ -149,7 +149,7 @@
   -webkit-backdrop-filter: blur(18px);
   border-radius: 24px;
   box-sizing: border-box;
-  margin: auto 1.25rem;
+  margin: auto 0 auto clamp(1.25rem, 8vw, 8rem);
   max-width: 520px;
   width: 100%;
   padding: 2.25rem;
@@ -162,11 +162,14 @@
 }
 
 .card-icon {
+  align-items: center;
   background: #f1d9f6;
   border-radius: 13px;
   color: #8d2ca5;
+  display: inline-flex;
   font-size: 1.2rem;
   height: 2.8rem;
+  justify-content: center;
   width: 2.8rem;
 }
 
@@ -174,7 +177,7 @@
   margin: 0 0 0.25rem;
 }
 
-.register-card h2 {
+.login-card h2 {
   color: #321042;
   font-size: 1.65rem;
   letter-spacing: -0.03em;
@@ -187,7 +190,7 @@
   margin: 1rem 0 1.5rem;
 }
 
-.register-card form {
+.login-card form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -225,7 +228,7 @@
   padding-left: 2.7rem;
 }
 
-.register-card input {
+.login-card input {
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid #e5dce7;
   border-radius: 11px;
@@ -238,17 +241,17 @@
   box-sizing: border-box;
 }
 
-.register-card input::placeholder {
+.login-card input::placeholder {
   color: #a89aa9;
 }
 
-.register-card input:focus {
+.login-card input:focus {
   background: white;
   border-color: #a84abd;
   box-shadow: 0 0 0 4px rgba(168, 74, 189, 0.12);
 }
 
-.register-card button {
+.login-card button {
   align-items: center;
   background: linear-gradient(110deg, #a640bc, #68218c);
   border: none;
@@ -266,14 +269,14 @@
   width: 100%;
 }
 
-.register-card button:focus-visible,
+.login-card button:focus-visible,
 .signin a:focus-visible,
 .nav-link:focus-visible {
   outline: 3px solid rgba(104, 33, 140, 0.45);
   outline-offset: 3px;
 }
 
-.register-card button:hover {
+.login-card button:hover {
   box-shadow: 0 10px 22px rgba(104, 33, 140, 0.25);
   transform: translateY(-2px);
 }
@@ -300,7 +303,8 @@
     margin: 0.25rem 0;
   }
 
-  .register-card {
+  .login-card {
+    align-self: center;
     margin: auto 1rem;
   }
 }
@@ -310,7 +314,7 @@
     padding: 0.75rem 1rem;
   }
 
-  .register-card {
+  .login-card {
     border-radius: 18px;
     margin: 2rem 0.75rem;
     padding: 1.5rem 1.15rem;
@@ -325,7 +329,7 @@
     align-items: flex-start;
   }
 
-  .register-card h2 {
+  .login-card h2 {
     font-size: 1.4rem;
   }
 }
