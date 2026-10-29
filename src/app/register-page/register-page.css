@@ -179,16 +179,26 @@
 .card-heading {
   align-items: center;
   display: flex;
+  flex-direction: column;
   gap: 0.85rem;
+  text-align: center;
 }
 
 .card-icon {
+  align-items: center;
   background: #f1d9f6;
   border-radius: 13px;
   color: #8d2ca5;
+  display: inline-flex;
   font-size: 1.2rem;
   height: 2.8rem;
+  justify-content: center;
   width: 2.8rem;
+}
+
+.card-icon i {
+  display: block;
+  line-height: 1;
 }
 
 .card-kicker {

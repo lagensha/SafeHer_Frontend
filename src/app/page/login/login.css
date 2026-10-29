@@ -176,6 +176,11 @@
   width: 2.8rem;
 }
 
+.card-icon i {
+  display: block;
+  line-height: 1;
+}
+
 .card-kicker {
   margin: 0 0 0.25rem;
 }
