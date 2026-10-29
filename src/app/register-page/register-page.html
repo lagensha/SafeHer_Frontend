@@ -1,10 +1,11 @@
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<body class="body">
 <div class="hero">
   <nav class="navbar navbar-expand-sm">
     <div class="container-fluid">
-      <a class="navbar-brand" routerLink="/">💜 SafeHer</a>
+      <a class="navbar-brand" routerLink="/" aria-label="SafeHer home">
+        <span class="brand-mark"><i class="bi bi-shield-heart-fill" aria-hidden="true"></i></span>
+        <span>SafeHer</span>
+      </a>
 
       <button class="navbar-toggler" type="button"
               data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -22,48 +23,80 @@
       </div>
     </div>
   </nav>
+
   <div class="register-container">
     <div class="register-intro">
-      <h1 class="firstH1">💜 SafeHer</h1>
+      <span class="eyebrow"><i class="bi bi-stars" aria-hidden="true"></i> Safety starts with community</span>
+      <h1 class="firstH1">Feel safer.<br><span>Live freely.</span></h1>
       <p class="intro-desc">Because every woman deserves to feel safe. Join a community that looks out for you, wherever you go.</p>
+      <div class="intro-points" aria-label="SafeHer benefits">
+        <div class="intro-point">
+          <span class="point-icon"><i class="bi bi-shield-check" aria-hidden="true"></i></span>
+          <span><strong>Safety-first support</strong><small>Tools designed around your peace of mind</small></span>
+        </div>
+        <div class="intro-point">
+          <span class="point-icon"><i class="bi bi-people" aria-hidden="true"></i></span>
+          <span><strong>A community you can trust</strong><small>Stay connected wherever life takes you</small></span>
+        </div>
+      </div>
     </div>
 
-    
     <div class="register-card">
-      <h1>💜 SafeHer</h1>
-      <h2>Create your account</h2>
-      <p>Join our community and take control of your safety. Sign up now to access our features and resources.</p>
+      <div class="card-heading">
+        <span class="card-icon"><i class="bi bi-person-plus-fill" aria-hidden="true"></i></span>
+        <div>
+          <p class="card-kicker">Welcome to SafeHer</p>
+          <h2>Create your account</h2>
+        </div>
+      </div>
+      <p class="card-description">Join our community and take control of your safety.</p>
 
       <form>
-     
-        <label for="fullName">Full Name</label>
-        <div class="input-with-icon">
-         <i class="bi bi-person"></i>
-          <input id="fullName" type="text" placeholder="      Enter your name">
-    </div>
-        <label for="email">Email Address</label>
-         <div class="input-with-icon">
-         <i class="bi bi-envelope"></i>
-        <input id="email" type="email" placeholder="       Enter your email address">
+        <div class="form-field">
+          <label for="fullName">Full name</label>
+          <div class="input-with-icon">
+            <i class="bi bi-person" aria-hidden="true"></i>
+            <input id="fullName" type="text" placeholder="    Enter your name">
+          </div>
         </div>
 
+        <div class="form-field">
+          <label for="email">Email address</label>
+          <div class="input-with-icon">
+            <i class="bi bi-envelope" aria-hidden="true"></i>
+            <input id="email" type="email" placeholder="     Enter your email address">
+          </div>
+        </div>
 
-        <label for="phone">Phone Number</label>
-        <input id="phone" type="tel" placeholder="Enter your phone number">
+        <div class="form-field">
+          <label for="phone">Phone number</label>
+          <div class="input-with-icon">
+            <i class="bi bi-telephone" aria-hidden="true"></i>
+            <input id="phone" type="tel" placeholder="     Enter your phone number">
+          </div>
+        </div>
 
-        <label for="password">Password</label>
-        <input id="password" type="password" placeholder="Create a password">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="password">Password</label>
+            <div class="input-with-icon">
+              <i class="bi bi-lock" aria-hidden="true"></i>
+              <input id="password" type="password" placeholder="    Create a password">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="confirmPassword">Confirm password</label>
+            <div class="input-with-icon">
+              <i class="bi bi-lock" aria-hidden="true"></i>
+              <input id="confirmPassword" type="password" placeholder="    Confirm password">
+            </div>
+          </div>
+        </div>
 
-        <label for="confirmPassword">Confirm Password</label>
-        <input id="confirmPassword" type="password" placeholder="Confirm your password">
-
-        <button type="submit">Create Account →</button>
+        <button type="submit">Create account <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
       </form>
 
-      <p class="signin">Already have an account?
-        <a routerLink="/login">Log in</a>
-      </p>
+      <p class="signin">Already have an account? <a routerLink="/login">Log in</a></p>
     </div>
   </div>
 </div>
-</body>
