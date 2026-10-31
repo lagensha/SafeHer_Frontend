@@ -1,21 +1,68 @@
-
-<body>
-    <div class="hero">
-        <nav class="navbar navbar-expand-sm">
-  <div class="container-fluid">
-    <a class="navbar-brand">💜 SafeHer</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" aria-hidden="true"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ms-auto">
-        <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
-        <a class="nav-link" routerLink="/register" routerLinkActive="active">Register</a>
-        <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
+<div class="hero">
+<div class="about-page">
+  <nav class="navbar navbar-expand-sm" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/" aria-label="SafeHer home">
+        <span aria-hidden="true">💜</span> SafeHer
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#aboutNav"
+        aria-controls="aboutNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="aboutNav">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+          <a class="nav-link" routerLink="/register" routerLinkActive="active">Register</a>
+          <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-</div>
-</body>
+  </nav>
 
+  <main>
+    <section class="about-hero" aria-labelledby="about-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><i class="bi bi-heart-fill" aria-hidden="true"></i> Safety starts with support</p>
+        <h1 id="about-title">Building a safer world, <span>together.</span></h1>
+        <p class="hero-description">
+          SafeHer helps women report harassment, find immediate support, and move through their communities with confidence.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-button" routerLink="/register">Join SafeHer <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          <a class="text-button" routerLink="/login">Already a member? Log in</a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="/about.png" alt="Woman looking confidently over a city at sunset" class="hero-image">
+        <div class="image-badge"><i class="bi bi-shield-check" aria-hidden="true"></i><span>Stronger<br><strong>together</strong></span></div>
+      </div>
+    </section>
+
+    <section class="mission-section" aria-labelledby="mission-title">
+      <div class="section-heading">
+        <p class="eyebrow">What we believe</p>
+        <h2 id="mission-title">Your voice can make a difference.</h2>
+        <p>We combine practical tools with community care to make getting help simpler, faster, and more accessible.</p>
+      </div>
+      <div class="value-grid">
+        <article class="value-card">
+          <span class="value-icon"><i class="bi bi-megaphone" aria-hidden="true"></i></span>
+          <h3>Be heard</h3>
+          <p>Report incidents clearly and help create safer public spaces for everyone.</p>
+        </article>
+        <article class="value-card">
+          <span class="value-icon"><i class="bi bi-lightning-charge" aria-hidden="true"></i></span>
+          <h3>Get support quickly</h3>
+          <p>Connect with trusted help and nearby assistance when you need it most.</p>
+        </article>
+        <article class="value-card">
+          <span class="value-icon"><i class="bi bi-people" aria-hidden="true"></i></span>
+          <h3>Grow together</h3>
+          <p>Build a caring community where every woman feels safer and more confident.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</div>
+</div>
