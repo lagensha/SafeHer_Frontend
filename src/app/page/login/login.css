@@ -29,4 +29,10 @@
 }
 .navbar-brand{
   align-items: center;
+  display: inline-flex;
+  gap: 0.55rem;
+  color: aliceblue;
+  font-size: 1.35;
+  font-weight: 700;
+  letter-spacing: -0.03;
 }
