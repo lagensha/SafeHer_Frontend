@@ -49,5 +49,8 @@
 }
 .nav-link{
   color: aliceblue;
-  
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 0 1.5rem;
+  transition: color 180ms ease, transform 180ms ease;  
 }
