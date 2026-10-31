@@ -86,3 +86,10 @@
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   margin-left: 20px;
 }
+.btn:hover {
+  background-color: #d07fdf;
+  box-shadow: 0 6px 20px rgba(249, 157, 247, 0.4);
+}
+.Para1{
+  
+}
