@@ -62,3 +62,19 @@
   color: rgb(255, 140, 236);
   transform: translateY(-1px);
 }
+.login-container{
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  gap: clamo(3rem, 8vw, 9rem);
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 4rem 6%;
+  width: 100%;
+}
+.login-intro{
+  flex: 1;
+  max-width: 560px;
+}
