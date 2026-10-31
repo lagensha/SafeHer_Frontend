@@ -136,3 +136,9 @@
   color:#59116b;
   font-size:24px;
 }
+.feature-item h3 {
+   font-size: 14px; 
+  font-weight: 700;
+  color: #350b4b;
+  margin-bottom: 5px;
+}
