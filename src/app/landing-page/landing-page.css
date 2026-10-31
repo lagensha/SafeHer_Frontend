@@ -23,12 +23,22 @@
 }
 .hero{
   min-height: 100vh;
+  position: relative;
+  isolation: isolate;
   background-image: url('./asset/img/3dc921c4-bef1-4a77-b642-5a69d196aecc.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(110deg, rgba(255, 247, 255, 0.94) 0%, rgba(255, 247, 255, 0.7) 42%, rgba(83, 27, 112, 0.18) 100%),
+    linear-gradient(180deg, rgba(46, 10, 72, 0.12), transparent 28%);
+}
 .Para1{
   color: rgb(70, 13, 83);
   font-size: 10px;
