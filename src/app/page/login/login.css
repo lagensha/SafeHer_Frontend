@@ -54,3 +54,6 @@
   margin: 0 0 0 1.5rem;
   transition: color 180ms ease, transform 180ms ease;  
 }
+.navbar-nav .nav-link.active{
+  color: aliceblue;
+}
