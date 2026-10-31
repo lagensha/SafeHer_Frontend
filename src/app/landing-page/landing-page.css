@@ -57,3 +57,32 @@
   margin-left: 20px;
   font-family: 'Arial', sans-serif;
 }
+.heading2{
+  color:#e970d1;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+  margin-left: 20px;
+}
+.heading3{
+  color: rgb(70, 13, 83);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+  font-family: 'Arial', sans-serif;
+}
+.btn{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #e970d1;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 20px;
+}
