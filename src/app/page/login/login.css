@@ -57,3 +57,8 @@
 .navbar-nav .nav-link.active{
   color: aliceblue;
 }
+.nav-link:hover,
+.navbar-nav .nav-link.active:hover{
+  color: rgb(255, 140, 236);
+  transform: translateY(-1px);
+}
