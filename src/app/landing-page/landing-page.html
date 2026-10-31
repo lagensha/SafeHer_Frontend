@@ -1,59 +1,53 @@
 <div class="hero">
-<nav class="navbar navbar-expand-sm ">
-  <div class="container-fluid">
-    <a class="navbar-brand">💜 SafeHer</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" aria-hidden="true"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ms-auto">
-        <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
-        <a class="nav-link" routerLink="/register" routerLinkActive="active">Register</a>
-        <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
+  <nav class="navbar navbar-expand-sm" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/" aria-label="SafeHer home">
+        <span aria-hidden="true">💜</span> SafeHer
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+          <a class="nav-link" routerLink="/register" routerLinkActive="active">Register</a>
+          <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-<div class="hero-content">
-  <p class="Para1">A SAFER TOMORROW FOR EVERY WOMAN</p>
-  <h1 class="heading1">Report.</h1>
-  <h1 class="heading2">Get Help.</h1>
-  <h1 class="heading3">Feel Safer.</h1>
-  <p class="Para2">SafeHer empowers women to report harassment</p>
-  <p class="Para2">during public transport,get immediate support</p>
-  <p class="Para2">and connect with nearby police assistance.</p>
-  <a class="btn" routerLink="/register">Get Started</a>
-</div>
-<section class="features-section">
-  <div class="feature-card">
-    <div class="feature-item">
-      <div class="icon-circle">
-        <i class="bi bi-shield-check" aria-hidden="true"></i>
-      </div>
-      <h3>Report Easily</h3>
-      <p>Upload images or videos and share <br>details in secomds.</p>
-    </div>
-       <div class="feature-item">
-      <div class="icon-circle">
-        <i class="bi bi-geo-alt"></i>
-      </div>
-      <h3>Live Location</h3>
-      <p>Share your real-time<br>location for quick help.</p>
-    </div>
-     <div class="feature-item">
-      <div class="icon-circle">
-        <i class="bi bi-shield"></i>
-      </div>
-      <h3>Nearby Police</h3>
-      <p>Get connected to the<br>nearest police station.</p>
-    </div>
+  </nav>
 
-    <div class="feature-item">
-      <div class="icon-circle">
-        <i class="bi bi-people"></i>
-      </div>
-      <h3>Stronger Together</h3>
-      <p>A safer community<br>for every woman.</p>
+  <main class="hero-content">
+    <p class="eyebrow">A safer tomorrow for every woman</p>
+    <h1>Report.<br><span>Get Help.</span><br>Feel Safer.</h1>
+    <p class="intro-copy">SafeHer empowers women to report harassment on public transport, get immediate support, and connect with nearby police assistance.</p>
+    <a class="cta-button" routerLink="/register">Get started <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+  </main>
+
+  <section class="features-section" aria-labelledby="features-title">
+    <h2 id="features-title" class="visually-hidden">SafeHer features</h2>
+    <div class="feature-card">
+      <article class="feature-item">
+        <div class="icon-circle"><i class="bi bi-shield-check" aria-hidden="true"></i></div>
+        <h3>Report easily</h3>
+        <p>Upload images or videos and share details in seconds.</p>
+      </article>
+      <article class="feature-item">
+        <div class="icon-circle"><i class="bi bi-geo-alt" aria-hidden="true"></i></div>
+        <h3>Live location</h3>
+        <p>Share your real-time location for quick help.</p>
+      </article>
+      <article class="feature-item">
+        <div class="icon-circle"><i class="bi bi-shield" aria-hidden="true"></i></div>
+        <h3>Nearby police</h3>
+        <p>Get connected to the nearest police station.</p>
+      </article>
+      <article class="feature-item">
+        <div class="icon-circle"><i class="bi bi-people" aria-hidden="true"></i></div>
+        <h3>Stronger together</h3>
+        <p>Build a safer community for every woman.</p>
+      </article>
     </div>
-  </div>
-</section>
+  </section>
+</div>
