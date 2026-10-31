@@ -49,3 +49,11 @@
   font-family: 'Arial', sans-serif;
   letter-spacing: 2px;
 }
+.heading1{
+  color: rgb(70, 13, 83);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+  font-family: 'Arial', sans-serif;
+}
