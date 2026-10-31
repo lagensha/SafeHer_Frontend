@@ -21,3 +21,12 @@
    linear-gradient(110deg,rgba(255,247,255,0.94)0%, rgba(255, 247, 255, 0.7) 42%, rgba(83, 27, 112, 0.18) 100%),
     linear-gradient(180deg, rgba(46, 10, 72, 0.12), transparent 28%);
 }
+.navbar{
+  background: rgba(53,13,75,0.82);
+   backdrop-filter: blur(14px);
+   -webkit-backdrop-filter: blur(14px);
+   padding: 0.8rem 4%;
+}
+.navbar-brand{
+  align-items: center;
+}
