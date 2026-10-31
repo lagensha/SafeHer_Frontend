@@ -1,49 +1,71 @@
-  <div class="hero">
-  <nav class="navbar navbar-expand-sm">
-  <div class="container-fluid">
-    <a class="navbar-brand">💜 SafeHer</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" aria-hidden="true"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ms-auto">
-        <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
-        <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
-        <a class="nav-link" routerLink="/register" routerLinkActive="active">Register</a>
-      </div>
-    </div>
-  </div>
-</nav>
-<div class="login-card">
-      <div class="card-heading">
-        <span class="card-icon"><i class="bi bi-person-plus-fill" aria-hidden="true"></i></span>
-        <div>
-          <p class="card-kicker">Welcome to SafeHer</p>
-          <h2>Login your account</h2>
+<div class="hero">
+  <nav class="navbar navbar-expand-sm" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/" aria-label="SafeHer home">
+        <span aria-hidden="true">💜</span> SafeHer
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+          <a class="nav-link" routerLink="/register" routerLinkActive="active">Register</a>
         </div>
       </div>
-      <p class="card-description">Join our community and take control of your safety.</p>
+    </div>
+  </nav>
 
-      <form>
+  <main class="login-container">
+    <section class="login-intro" aria-labelledby="login-page-title">
+      <p class="eyebrow"><i class="bi bi-shield-check" aria-hidden="true"></i> Your safety matters</p>
+      <h1 id="login-page-title">Welcome back to <span>SafeHer</span></h1>
+      <p class="intro-desc">A supportive space to help you stay informed, connected, and confident wherever you go.</p>
+      <div class="intro-points" aria-label="SafeHer benefits">
+        <div class="intro-point">
+          <span class="point-icon"><i class="bi bi-heart" aria-hidden="true"></i></span>
+          <div><strong>Feel supported</strong><small>Access a community that cares.</small></div>
+        </div>
+        <div class="intro-point">
+          <span class="point-icon"><i class="bi bi-lock" aria-hidden="true"></i></span>
+          <div><strong>Your privacy comes first</strong><small>Your account stays protected.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="login-card" aria-labelledby="login-title">
+      <div class="card-heading">
+        <span class="card-icon"><i class="bi bi-person-check-fill" aria-hidden="true"></i></span>
+        <div>
+          <p class="card-kicker">Welcome back</p>
+          <h2 id="login-title">Log in to your account</h2>
+        </div>
+      </div>
+      <p class="card-description">Enter your details to continue your SafeHer journey.</p>
+
+      <form aria-label="Log in form">
         <div class="form-field">
-          <label for="email"> Email address</label>
+          <label for="email">Email address</label>
           <div class="input-with-icon">
             <i class="bi bi-envelope" aria-hidden="true"></i>
-            <input id="email" type="email" placeholder="    Enter your email address" autocomplete="email" required>
+            <input id="email" type="email" placeholder="Enter your email address" autocomplete="email" required>
           </div>
         </div>
 
-        <div class="form-row">
-          <div class="form-field">
-            <label for="password">Password</label>
-            <div class="input-with-icon">
-              <i class="bi bi-lock" aria-hidden="true"></i>
-              <input id="password" type="password" placeholder="    Enter your password" autocomplete="current-password" required>
-            </div>
+        <div class="form-field">
+          <label for="password">Password</label>
+          <div class="input-with-icon">
+            <i class="bi bi-lock" aria-hidden="true"></i>
+            <input id="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
           </div>
         </div>
 
-        <button type="submit">Login <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+        <button type="submit">Log in <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
       </form>
-    </div>
-  </div>
+
+      <p class="register-prompt">New to SafeHer? <a routerLink="/register">Create an account</a></p>
+    </section>
+  </main>
+</div>
