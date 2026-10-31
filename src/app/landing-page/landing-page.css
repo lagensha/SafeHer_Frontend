@@ -119,3 +119,7 @@
   padding: 0 20px;
   border-right:  1px solid rgba(100, 50, 120, 0.12);
 }
+.feature-item:last-child {
+  border-right: none;
+}
+
