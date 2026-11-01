@@ -22,6 +22,8 @@
   font-weight: 700;
 }
 
+.navbar-brand:hover,
+.navbar-brand:focus-visible,
 .nav-link:hover,
 .nav-link:focus-visible,
 .navbar-nav .nav-link.active {
@@ -38,6 +40,7 @@
 
 .nav-link {
   font-weight: bold;
+  font-size: 1.10rem;
   transition: all 0.2s ease;
    border-radius: 6px;
   padding: 8px 16px;
