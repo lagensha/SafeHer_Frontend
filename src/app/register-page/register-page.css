@@ -55,18 +55,19 @@
 }
 
 .nav-link {
-  color: white;
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin: 0 0 0 1.5rem;
-  transition: color 180ms ease, transform 180ms ease;
+ transition: all 0.2s ease;
+   border-radius: 6px;
+  padding: 8px 16px;
+  color: #600566;
 }
 
 .navbar-nav .nav-link.active {
   color: white;
 }
 
-.nav-link:hover,
+.nav-link:hover{
+  background-color: rgba(194, 51, 139, 0.15);
+}
 .navbar-nav .nav-link.active:hover {
   color: #f099ff;
   transform: translateY(-1px);
