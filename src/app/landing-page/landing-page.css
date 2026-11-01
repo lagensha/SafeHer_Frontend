@@ -20,7 +20,7 @@
 }
 
 .navbar {
-  background: rgba(53, 13, 75, .88);
+  background: linear-gradient(110deg, rgba(111, 54, 111, 0.95), rgba(211, 201, 211, 0.72) 48%, rgba(40, 3, 59, 0.2));
   backdrop-filter: blur(14px);
   padding: .8rem 4%;
 }
