@@ -62,14 +62,14 @@
 }
 
 .navbar-nav .nav-link.active {
-  color: white;
+  color: rgb(94, 11, 110);
 }
 
 .nav-link:hover{
   background-color: rgba(194, 51, 139, 0.15);
 }
 .navbar-nav .nav-link.active:hover {
-  color: #f099ff;
+  color: #37183d;
   transform: translateY(-1px);
 }
 
