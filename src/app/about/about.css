@@ -11,14 +11,14 @@
 }
 
 .navbar {
-  background: rgba(53, 13, 75, .9);
+   background: linear-gradient(110deg, rgba(111, 54, 111, 0.95), rgba(211, 201, 211, 0.72) 48%, rgba(113, 7, 166, 0.2));
   backdrop-filter: blur(14px);
   padding: .8rem 4%;
 }
 
 .navbar-brand {
   color: #fff;
-  font-size: 1.35rem;
+  font-size: 1.80rem;
   font-weight: 700;
 }
 
@@ -27,7 +27,7 @@
 .nav-link:hover,
 .nav-link:focus-visible,
 .navbar-nav .nav-link.active {
-  color: #f099ff;
+  color: #603068;
 }
 
 .navbar-toggler {
@@ -35,18 +35,18 @@
 }
 
 .navbar-toggler:focus {
-  box-shadow: 0 0 0 .2rem rgba(240, 153, 255, .35);
+  box-shadow: 0 0 0 .2rem rgba(214, 1, 132, 0.35);
 }
 
 .nav-link {
-  color: #fff;
+  color: #603068;
   font-weight: 600;
   margin-left: 1.5rem;
   transition: color .18s ease, transform .18s ease;
 }
 
 .nav-link:hover {
-  transform: translateY(-1px);
+   box-shadow: 0 0 0 .2rem rgba(84, 39, 92, 0.35);
 }
 
 .about-hero,
