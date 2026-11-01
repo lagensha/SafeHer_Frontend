@@ -59,6 +59,7 @@
    border-radius: 6px;
   padding: 8px 16px;
   color: #600566;
+  font-weight: bold;
 }
 
 .navbar-nav .nav-link.active {
