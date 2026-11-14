@@ -25,7 +25,7 @@
 }
 
 .navbar {
-  background: rgba(53, 13, 75, 0.88);
+  background: linear-grandient(110deg,rgba(111, 54, 111, 0.95), rgba(211, 201, 211, 0.72) 48%, rgba(40, 3, 59, 0.2));
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   padding: 0.8rem 4%;
@@ -35,10 +35,18 @@
   align-items: center;
   display: inline-flex;
   gap: 0.55rem;
-  color: #fff;
+  color:  white;
   font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: -0.03em;
+}
+
+.brand-mark,
+.card-icon,
+.point-icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
 }
 
 .navbar-brand:hover,
@@ -53,9 +61,20 @@
 .navbar-toggler:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 153, 255, 0.35);
 }
+.brand-mark,
+.card-icon,
+.point-icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+}
 
+.brand-mark {
+  color: #f9c9ff;
+  font-size: 1.5rem;
+}
 .nav-link {
-  color: #fff;
+  color: #600566;
   font-size: 0.9rem;
   font-weight: 600;
   margin-left: 1.5rem;
@@ -65,7 +84,7 @@
 .navbar-nav .nav-link.active,
 .nav-link:hover,
 .navbar-nav .nav-link.active:hover {
-  color: #f099ff;
+  color: #480f52;
 }
 
 .login-container {
