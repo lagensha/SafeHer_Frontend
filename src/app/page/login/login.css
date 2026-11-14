@@ -25,7 +25,7 @@
 }
 
 .navbar {
-  background: linear-grandient(110deg,rgba(111, 54, 111, 0.95), rgba(211, 201, 211, 0.72) 48%, rgba(40, 3, 59, 0.2));
+   background: linear-gradient(110deg, rgba(111, 54, 111, 0.95), rgba(211, 201, 211, 0.72) 48%, rgba(40, 3, 59, 0.2));
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   padding: 0.8rem 4%;
@@ -35,7 +35,7 @@
   align-items: center;
   display: inline-flex;
   gap: 0.55rem;
-  color:  white;
+  color: white;
   font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -49,42 +49,30 @@
   justify-content: center;
 }
 
-.navbar-brand:hover,
-.navbar-brand:focus-visible {
-  color: #f9c9ff;
-}
-
-.navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.55);
-}
-
-.navbar-toggler:focus {
-  box-shadow: 0 0 0 0.2rem rgba(240, 153, 255, 0.35);
-}
-.brand-mark,
-.card-icon,
-.point-icon {
-  align-items: center;
-  display: inline-flex;
-  justify-content: center;
-}
-
 .brand-mark {
   color: #f9c9ff;
   font-size: 1.5rem;
 }
+
 .nav-link {
+  transition: all 0.2s ease;
+  border-radius: 6px;
+  padding: 8px 16px;
   color: #600566;
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-left: 1.5rem;
-  transition: color 180ms ease, transform 180ms ease;
+  font-weight: bold;
 }
 
-.navbar-nav .nav-link.active,
-.nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: rgb(94, 11, 110);
+}
+
+.nav-link:hover {
+  background-color: rgba(194, 51, 139, 0.15);
+}
+
 .navbar-nav .nav-link.active:hover {
-  color: #480f52;
+  color: #37183d;
+  transform: translateY(-1px);
 }
 
 .login-container {
